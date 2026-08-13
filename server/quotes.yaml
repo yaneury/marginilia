@@ -1,7 +1,341 @@
-- body: "The most courageous act is still to think for yourself. Aloud."
-  author: "Coco Chanel"
-  work: ""
+# Northwest London Blues — Zadie Smith
+- body: "Well-run libraries are filled with people because what a good library offers cannot be easily found elsewhere: an indoor public space in which you do not have to buy anything in order to say."
+  author: "Zadie Smith"
+  work: "Northwest London Blues"
 
-- body: "Not all those who wander are lost."
-  author: "J.R.R. Tolkien"
-  work: "The Fellowship of the Ring"
+# I Wandered Lonely as a Cloud — William Wordsworth
+- body: "For oft, when on my couch I lie\nIn vacant or in pensive mood,\nThey flash upon that inward eye\nWhich is the bliss of solitude;\nAnd then my heart with pleasure fills,\nAnd dances with the daffodils."
+  author: "William Wordsworth"
+  work: "I Wandered Lonely as a Cloud"
+
+# Fruits of The Spirit — Jay Electronica
+- body: "The prayers of the slaves are the wings that carry us\nA field full of dreams is where they tried to bury us"
+  author: "Jay Electronica"
+  work: "Fruits of The Spirit"
+
+# A.P.I.D.T.A. — Jay Electronica
+- body: "The last time that I kissed you, you felt cold but you looked peaceful\nI read our message thread when I get low and need a refill."
+  author: "Jay Electronica"
+  work: "A.P.I.D.T.A."
+
+# Resurrection — Leo Tolstoy
+- body: "The whole trouble lies in that people think that there are conditions excluding the necessity of love in their intercourse with man, but such conditions do not exist. Things may be treated without love; one may chop wood, make bricks, forge iron without love, but one can no more deal with people without love than one can handle bees without care."
+  author: "Leo Tolstoy"
+  work: "Resurrection"
+
+# Killing Rage — bell hooks
+- body: "People are trapped in history and history is trapped in them."
+  author: "bell hooks"
+  work: "Killing Rage"
+
+# The Negro Artist and the Racial Mountain — Langston Hughes
+- body: "An artist must be free to choose what he does, certainly, but he must also never be afraid to do what he must choose."
+  author: "Langston Hughes"
+  work: "The Negro Artist and the Racial Mountain"
+
+- body: "We younger Negro artists who create now intend to express our individual dark-skinned selves without fear or shame. If white people are pleased we are glad. If they are not, it doesn't matter. We know we are beautiful. And ugly too. The tom-tom cries and the tom-tom laughs. If colored people are pleased we are glad. If they are not, their displeasure doesn't matter either. We build our temples for tomorrow, strong as we know how, and we stand on top of the mountain, free within ourselves."
+  author: "Langston Hughes"
+  work: "The Negro Artist and the Racial Mountain"
+
+# DFW Interview — David Foster Wallace
+- body: "I'm not advocating that the organizing principle of fiction be ideas. Fiction that starts out with ideas makes for bad fiction. It has to start off with a feeling in the gut. Any time you write about ideas, you're walking a fine line between criticism and fiction."
+  author: "David Foster Wallace"
+  work: "Interview with Engender"
+
+# The Shape-Shifter — John Lahr
+- body: "You are enough. Trust your beating heart."
+  author: "John Lahr"
+  work: "The Shape-Shifter"
+
+# Candide — Voltaire
+- body: "A dramatist must be original without being eccentric, that he must be often sublime and always natural, that he must know the human heart and make it speak, be a great poet without letting any of his characters sound like a poet, have a perfect command of his language and write with purity and continuous harmony, without ever sacrificing meaning to rhyme."
+  author: "Voltaire"
+  work: "Candide"
+
+- body: "I've wanted to kill myself a hundred times, but I still love life. That ridiculous weakness is perhaps one of our most pernicious inclinations. What could be more stupid than to persist in carrying a burden that we constantly want to cast off, to hold our existences in horror, yet cling to it nonetheless, to fondle the serpent that devours us, until it has eaten our heart?"
+  author: "Voltaire"
+  work: "Candide"
+
+# The Picture of Dorian Gray — Oscar Wilde
+- body: "There is only one thing in the world worse than being talked about, and that is not being talked about."
+  author: "Oscar Wilde"
+  work: "The Picture of Dorian Gray"
+
+- body: "Every portrait that is painted with feeling is a portrait of the artist, not of the sitter. The sitter is merely the accident, the occasion. It is not he who is revealed by the painter; it is rather the painter who, on the coloured canvas, reveals himself."
+  author: "Oscar Wilde"
+  work: "The Picture of Dorian Gray"
+
+- body: "Genius lasts longer than Beauty. That accounts for the fact that we all take such pains to over-educate ourselves. In the wild struggle for existence, we want to have something that endures, and so we fill our minds with rubbish and facts, in the silly hope of keeping our place. The thoroughly well-informed man--that is the modern ideal. And the mind of the thoroughly well-informed man is a dreadful thing."
+  author: "Oscar Wilde"
+  work: "The Picture of Dorian Gray"
+
+- body: "Those who are faithful know only the trivial side of love: it is the faithless who know love's tragedies."
+  author: "Oscar Wilde"
+  work: "The Picture of Dorian Gray"
+
+- body: "The only difference between a caprice and a life-long passion is that the caprice lasts a little longer."
+  author: "Oscar Wilde"
+  work: "The Picture of Dorian Gray"
+
+- body: "Good artists exist simply in what they make, and consequently are perfectly uninteresting in what they are. A great poet, a really great poet, is the most unpoetical of all creatures. But inferior poets are absolutely fascinating. The worse their rhymes are, the more picturesque they look. The mere fact of having published a book of second-rate sonnets makes a man quite irresistible. He lives the poetry that he cannot write. The others write the poetry that they dare not realize."
+  author: "Oscar Wilde"
+  work: "The Picture of Dorian Gray"
+
+- body: "Children begin by loving their parents; as they grow older they judge them; sometimes they forgive them."
+  author: "Oscar Wilde"
+  work: "The Picture of Dorian Gray"
+
+- body: "There are only two kinds of people who are really fascinating--people who know absolutely everything, and people who know absolutely nothing."
+  author: "Oscar Wilde"
+  work: "The Picture of Dorian Gray"
+
+- body: "There is a luxury in self-reproach. When we blame ourselves we feel that no one else has a right to blame us. It is the confession, not the priest, that gives us absolution."
+  author: "Oscar Wilde"
+  work: "The Picture of Dorian Gray"
+
+- body: "One should absorb the colour of life, but one should never remember its details. Details are always vulgar."
+  author: "Oscar Wilde"
+  work: "The Picture of Dorian Gray"
+
+- body: "Each man lived his own life, and paid his own price for living it. The only pity was one had to pay so often for a single fault. One had to pay over and over again, indeed. In her dealings with man Destiny never closed her accounts."
+  author: "Oscar Wilde"
+  work: "The Picture of Dorian Gray"
+
+# Everyman — Philip Roth (quoting Chuck Close)
+- body: "Amateurs look for inspiration; the rest of us just get up and go to work."
+  author: "Chuck Close"
+  work: "Everyman (Philip Roth)"
+
+# The Catcher in The Rye — J.D. Salinger
+- body: "She knew quite a lot about the theater and plays and literature and all that stuff. If somebody knows quite a lot about these things, it takes you quite a while to find out whether they're really stupid or not."
+  author: "J.D. Salinger"
+  work: "The Catcher in The Rye"
+
+- body: "The mark of the immature man is that he wants to die nobly for a cause, while the mark of the mature man is that he wants to live humbly for one."
+  author: "J.D. Salinger"
+  work: "The Catcher in The Rye"
+
+- body: "You'll find that you're not the first person who was ever confused and frightened and even sickened by human behavior. You're by no means alone on that score. Many, many men have been just as troubled morally and spiritually as you are right now. Happily, some of them kept records of their troubles. You'll learn from them -- if you want to."
+  author: "J.D. Salinger"
+  work: "The Catcher in The Rye"
+
+# Great Expectations — Charles Dickens
+- body: "That was a memorable day to me, for it made great changes in me. But it is the same with any life. Imagine one selected day struck out of it, and think how different its course would have been. Pause you who read this, and think for a moment of the long chain of iron or gold, of thorns or flowers, that would never have bound you, but for the formation of the first link on one memorable day."
+  author: "Charles Dickens"
+  work: "Great Expectations"
+
+- body: "We were always more or less miserable, and most of our acquaintances were in the same condition. There was a gay fiction among us that we were constantly enjoying ourselves, and a skeleton truth that we never did. To the best of my belief, our case was in the last aspect a rather common one."
+  author: "Charles Dickens"
+  work: "Great Expectations"
+
+# The Future of the American Negro — Booker T. Washington
+- body: "One piano lesson in a home of one's own is worth twenty in a rented log cabin."
+  author: "Booker T. Washington"
+  work: "The Future of the American Negro"
+
+- body: "They went into slavery pagans, they came out Christians; they went into slavery as so much property, they came out American citizens; they went into slavery without a language, they came out speaking the proud Anglo-Saxon tongue; they went into slavery with the chains clanking about their wrists, they came out with the American ballot in their hands."
+  author: "Booker T. Washington"
+  work: "The Future of the American Negro"
+
+- body: "Call education by what name you please, if it fails to bring about these results among the masses, it falls short of its highest end. The science, the art, the literature, that fails to reach down and bring the humblest up to the enjoyment of the fullest blessings of our government, is weak, no matter how costly the buildings or apparatus used or how modern the methods of instruction employed."
+  author: "Booker T. Washington"
+  work: "The Future of the American Negro"
+
+# The Autobiography of an Ex-Colored Man — James Weldon Johnson
+- body: "My situation made me feel weak and powerless, like a man trying with his bare hands to break the iron bars of his prison cell."
+  author: "James Weldon Johnson"
+  work: "The Autobiography of an Ex-Colored Man"
+
+- body: "In the life of everyone there is a limited number of unhappy experiences which are not written upon the memory, but stamped there with a die; and in long years after, they can be called up in detail, and every emotion that was stirred by them can be lived through anew; these are the tragedies of life."
+  author: "James Weldon Johnson"
+  work: "The Autobiography of an Ex-Colored Man"
+
+- body: "New York City is the most fatally fascinating thing in America. She sits like a great witch at the gate of the country, showing her alluring white face and hiding her crooked hands and feet under the folds of her wide garments -- constantly enticing thousands from far within, and tempting those who come from across the seas to go no farther."
+  author: "James Weldon Johnson"
+  work: "The Autobiography of an Ex-Colored Man"
+
+- body: "Nothing great or enduring, especially in music, has ever sprung full-fledged and unprecedented from the brain of any master; the best that he gives to the world he gathers from the hearts of the people, and runs it through the alembic of his genius."
+  author: "James Weldon Johnson"
+  work: "The Autobiography of an Ex-Colored Man"
+
+# Getting Away From Already Pretty Much Being Away From It All — David Foster Wallace
+- body: "One of the few things I still miss from my Midwest childhood was this weird, deluded but unshakeable conviction that everything around me existed all and only For Me."
+  author: "David Foster Wallace"
+  work: "Getting Away From Already Pretty Much Being Away From It All"
+
+# E Unibus Pluram — David Foster Wallace
+- body: "Fiction writers as a species tend to be oglers. They tend to lurk and to stare. The minute fiction writers stop moving, they start lurking, and stare. They are born watchers. They are viewers. They are the ones on the subway about whose nonchalant stare there is something creepy, somehow. Almost predatory. This is because human situations are writers' food."
+  author: "David Foster Wallace"
+  work: "E Unibus Pluram"
+
+# Box Seat — Jean Toomer
+- body: "Life bends joy and pain, beauty and ugliness, in such a way that no one may isolate them. No one should want to. Perfect joy, or perfect pain, with no contrasting element to define them, would mean a monotony of consciousness, would mean death."
+  author: "Jean Toomer"
+  work: "Box Seat"
+
+- body: "Houses are shy girls whose eyes shine reticently upon the dusk body of the street."
+  author: "Jean Toomer"
+  work: "Box Seat"
+
+# Here And There — David Foster Wallace
+- body: "Whole periods of time now begin to feel to me like the intimate, agonizing interval between something's falling off and its hitting the ground."
+  author: "David Foster Wallace"
+  work: "Here And There"
+
+# The Sea — John Banville
+- body: "We carry the dead with us only until we die too, and then it is we who are borne along for a little while, and then our bearers in their turn drop, and so on into the unimaginable generations."
+  author: "John Banville"
+  work: "The Sea"
+
+# The Mystery of a Writer's Metier — Vivian Gornick
+- body: "Beginning young, I have had a great deal of practice not only in hiding my feelings but in hiding from them. Insincerity was one of the lessons I learned early and thoroughly, very early, very thoroughly."
+  author: "Vivian Gornick"
+  work: "The Mystery of a Writer's Metier"
+
+# Making Meaning — Garth Greenwell
+- body: "When I use relevance as a filter for determining what books to read, I'm failing to make myself available for an authentic encounter with otherness, something genuine art always offers."
+  author: "Garth Greenwell"
+  work: "Making Meaning"
+
+- body: "Part of the vulnerability necessary for transformation is the recognition that I am, to a great extent, a mystery to myself. How could I know what I need?"
+  author: "Garth Greenwell"
+  work: "Making Meaning"
+
+- body: "It is always ethically suspect to speak of any human experience as irrelevant to our common human experience; it is always, let me go further, an act of something like violence."
+  author: "Garth Greenwell"
+  work: "Making Meaning"
+
+# Whiteness In The Black Imagination — bell hooks
+- body: "Stereotypes, however inaccurate, are one form of representation. Like fictions, they are created to serve as substitutions, standing in for what is real. They are there not to tell it like it is but to invite and encourage pretense. They are a fantasy, a projection onto the Other that makes them less threatening. Stereotypes abound when there is distance. They are an invention, a pretense that one knows when the steps that would make real knowing possible cannot be taken or are not allowed."
+  author: "bell hooks"
+  work: "Whiteness In The Black Imagination"
+
+# The Conversion of the Jews — Philip Roth
+- body: "His mother was a round, tired, grayhaired penguin of a woman whose gray skin had begun to feel the tug of gravity and the weight of her own history."
+  author: "Philip Roth"
+  work: "The Conversion of the Jews"
+
+# The Gangsters — Colson Whitehead
+- body: "I had to admit it was fun. Not the shooting itself, but the satisfaction of discovering a new way to kill a chunk of summer. It was like scraping out a little cave, making a new space in the hours to hide in for a time."
+  author: "Colson Whitehead"
+  work: "The Gangsters"
+
+# Consider The Lobster — David Foster Wallace
+- body: "As I see it, it probably really is good for the soul to be a tourist, even if it's only once in a while. Not good for the soul in a refreshing or enlivening way, though, but rather in a grim, steely-eyed, let's-look-honestly-at-the-facts-and-find-some-way-to-deal-with-them way."
+  author: "David Foster Wallace"
+  work: "Consider The Lobster"
+
+# Up, Simba — David Foster Wallace
+- body: "There is a difference between a great leader and a great salesman. Of course there are also similarities. A great salesman is usually charismatic and likable and can often get us to do things we might not on our own, and sometimes to feel truly good about it. But even a truly great salesman isn't a leader. Because a salesman's ultimate, overriding motivation is: self-interest."
+  author: "David Foster Wallace"
+  work: "Up, Simba"
+
+# On Defence — Sergio De La Pava (quoting Dostoevsky)
+- body: "The degree of civilization in a society can be judged by entering its prisons."
+  author: "Fyodor Dostoevsky"
+  work: "On Defence (Sergio De La Pava)"
+
+- body: "That's how relentless it was. We were standing in a river trying to stem the current with our hands."
+  author: "Sergio De La Pava"
+  work: "On Defence"
+
+# Bringing Politics Into the Classroom — Clint Smith (quoting Baldwin)
+- body: "The obligation of anyone who thinks of himself as responsible is to examine society and try to change it and to fight it--at no matter what risk. This is the only hope society has. This is the only way societies change."
+  author: "James Baldwin"
+  work: "Bringing Politics Into the Classroom (Clint Smith)"
+
+# The Historian Who Sees The Future — Graeme Wood
+- body: "No one wants to accept that we live in the societies we do--rich, complex ones with universities and museums and philosophy and art--because of an ugly thing like war. But the data are clear: Darwinian processes select for complex societies because they kill off simpler ones."
+  author: "Graeme Wood"
+  work: "The Historian Who Sees The Future"
+
+# The Bible Without Miracles — James Parker
+- body: "Personally, not being Thomas Jefferson, I need Jesus and his miracles and his divine nature--I need the celestial reverb that they give to his words. Mystery, wonder, confusion--they're the essence. Like the yeast that leavens the bread, like the treasure buried in the field."
+  author: "James Parker"
+  work: "The Bible Without Miracles"
+
+# The Federalist Papers — James Madison (quoted in Danielle Allen essay)
+- body: "If men were angels, no government would be necessary. If angels were to govern men, neither external nor internal controls on government would be necessary. In framing a government which is to be administered by men over men, the great difficulty lies in this: You must first enable the government to control the governed; and in the next place, oblige it to control itself."
+  author: "James Madison"
+  work: "The Federalist Papers"
+
+# The Next Reconstruction — Adam Serwer
+- body: "Too many Americans still view racism as largely a personal failing rather than a systemic force. In this view, one's soul can be purged of racism by wielding the correct jargon, denouncing the right villains, and posting heartfelt Instagram captions."
+  author: "Adam Serwer"
+  work: "The Next Reconstruction"
+
+# Dietrologia — Paul Theroux
+- body: "He knew just how it would play out, and he drummed his fingers on the arm of his chair, as though tapping a fast-forward button, to speed up the ensuing drama."
+  author: "Paul Theroux"
+  work: "Dietrologia"
+
+- body: "'Home,' he said, 'the notion of home, like the notion of marriage, requires the illusion of being indispensable to someone. And I didn't have that illusion anymore. I can't honestly say I have it now.'"
+  author: "Paul Theroux"
+  work: "Dietrologia"
+
+# The Winged Thing — Patricia Lockwood
+- body: "How far did a word have to travel from its source in order to become unrecognizable?"
+  author: "Patricia Lockwood"
+  work: "The Winged Thing"
+
+# The Old Man in The Piazza — Salman Rushdie
+- body: "It never occurred to him that one day he would be the person answering the phone during the intermission. He never imagined that he would become the audience member trapped in the play."
+  author: "Salman Rushdie"
+  work: "The Old Man in The Piazza"
+
+# The Shaming Pandemic — D. T. Max
+- body: "The Internet, with its opportunity for anonymity, its absence of gatekeepers, and its magnification of transient hurts, has made it unnervingly easy to generate instant mass outrage."
+  author: "D. T. Max"
+  work: "The Shaming Pandemic"
+
+# Death Sentences — Julian Lucas
+- body: "Intimacy with death is often mistaken for morbid complicity with it."
+  author: "Julian Lucas"
+  work: "Death Sentences"
+
+# To The Friend Who Did Not Save My Life — Hervé Guibert (quoted in Death Sentences)
+- body: "It was an illness in stages, a very long flight of steps that led assuredly to death, but whose every step represented a unique apprenticeship. It was a disease that gave death time to live and its victims time to die, time to discover time, and in the end to discover life."
+  author: "Hervé Guibert"
+  work: "To The Friend Who Did Not Save My Life"
+
+# The Man Who Refused to Spy — Laura Secor
+- body: "In a pod, you couldn't hide behind an avatar, a bank account, or an accomplishment--not even behind the self-importance of a busy schedule."
+  author: "Laura Secor"
+  work: "The Man Who Refused to Spy"
+
+- body: "Procedural fairness and regularity are of the indispensable essence of liberty."
+  author: "Robert Jackson"
+  work: "The Man Who Refused to Spy (Laura Secor)"
+
+# The Englishman — Douglas Stuart
+- body: "I am the youngest of five brothers, each son fading slightly, becoming paler, more flaxen. It was as though our mother were a rubber stamp that was running out of ink--and she was. She always seemed to be weary."
+  author: "Douglas Stuart"
+  work: "The Englishman"
+
+- body: "I love him, but perhaps he does not love me. How could he? I am careful never to be myself around him."
+  author: "Douglas Stuart"
+  work: "The Englishman"
+
+# Motherland — Jianyang Fan
+- body: "For what is an immigrant but a mind mired in contradictions and doublings, stranded in resolved splits of the self? Sometimes I have wondered if these people knew something about me that had always eluded me. For them, there is not an ounce of doubt, whereas uncertainty is the country where I most belong."
+  author: "Jianyang Fan"
+  work: "Motherland"
+
+# Flashlight — Susan Choi
+- body: "Contentious by reflex."
+  author: "Susan Choi"
+  work: "Flashlight"
+
+# What Have We Done to the Whale? — Amia Srinivasan
+- body: "To be close to a whale, in the wild, not in a boat but in the water itself, is to encounter an embodied agency that exists, across every dimension, on a scale that swallows our own: its physical size, its evolutionary age, its polar voyages. The fear evoked by the whale is not a judgment on its character."
+  author: "Amia Srinivasan"
+  work: "What Have We Done to the Whale?"
+
+- body: "Future historians will have the task of explaining how our performative love for animals relates to our relentless extermination of them."
+  author: "Amia Srinivasan"
+  work: "What Have We Done to the Whale?"
+
+# After The Race Riots — Jim Carrier
+- body: "It was a pebble dropped in a still lake. The ripples are spreading today."
+  author: "Jim Carrier"
+  work: "After The Race Riots"
