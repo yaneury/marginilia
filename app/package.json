@@ -1,0 +1,29 @@
+{
+  "name": "marginilia",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-native": "0.76.5",
+    "react-native-ble-plx": "^3.2.0",
+    "@react-native-async-storage/async-storage": "^2.1.0",
+    "react-native-keychain": "^8.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.0",
+    "@babel/preset-env": "^7.25.0",
+    "@babel/runtime": "^7.25.0",
+    "@react-native/babel-preset": "0.76.5",
+    "@react-native/eslint-config": "0.76.5",
+    "@react-native/metro-config": "0.76.5",
+    "@react-native/typescript-config": "0.76.5",
+    "@types/react": "^18.3.1",
+    "typescript": "5.0.4"
+  }
+}
