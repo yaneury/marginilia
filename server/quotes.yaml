@@ -353,3 +353,8 @@
 - body: "Diamonds are only worth what you are willing to pay."
   author: "Lupe Fiasco"
   work: "Kiosk"
+
+# Operating Systems: Three Easy Pieces — Arpaci-Dusseau
+- body: "If the same people had twice as much time, they could produce as good of a system in half the code."
+  author: "Hugh Lauer"
+  work: "Operating Systems: Three Easy Pieces (Arpaci-Dusseau)"
