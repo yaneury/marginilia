@@ -4,17 +4,27 @@
   work: "Northwest London Blues"
 
 # I Wandered Lonely as a Cloud — William Wordsworth
-- body: "For oft, when on my couch I lie\nIn vacant or in pensive mood,\nThey flash upon that inward eye\nWhich is the bliss of solitude;\nAnd then my heart with pleasure fills,\nAnd dances with the daffodils."
+- body: |
+    For oft, when on my couch I lie
+    In vacant or in pensive mood,
+    They flash upon that inward eye
+    Which is the bliss of solitude;
+    And then my heart with pleasure fills,
+    And dances with the daffodils.
   author: "William Wordsworth"
   work: "I Wandered Lonely as a Cloud"
 
 # Fruits of The Spirit — Jay Electronica
-- body: "The prayers of the slaves are the wings that carry us\nA field full of dreams is where they tried to bury us"
+- body: |
+    The prayers of the slaves are the wings that carry us
+    A field full of dreams is where they tried to bury us
   author: "Jay Electronica"
   work: "Fruits of The Spirit"
 
 # A.P.I.D.T.A. — Jay Electronica
-- body: "The last time that I kissed you, you felt cold but you looked peaceful\nI read our message thread when I get low and need a refill."
+- body: |
+    The last time that I kissed you, you felt cold but you looked peaceful
+    I read our message thread when I get low and need a refill.
   author: "Jay Electronica"
   work: "A.P.I.D.T.A."
 
