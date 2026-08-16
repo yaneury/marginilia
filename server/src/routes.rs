@@ -1,13 +1,19 @@
 use axum::{
     Router,
-    extract::State,
+    extract::{Query, State},
     http::{HeaderMap, StatusCode},
     response::Json,
     routing::get,
 };
+use serde::Deserialize;
 
 use crate::AppState;
 use crate::quotes::QuotesResponse;
+
+#[derive(Deserialize)]
+pub struct QuotesParams {
+    since: Option<u64>,
+}
 
 pub fn router(state: AppState) -> Router {
     Router::new()
@@ -18,6 +24,7 @@ pub fn router(state: AppState) -> Router {
 async fn get_quotes(
     State(state): State<AppState>,
     headers: HeaderMap,
+    Query(params): Query<QuotesParams>,
 ) -> Result<Json<QuotesResponse>, StatusCode> {
     let key = headers
         .get("x-api-key")
@@ -28,5 +35,6 @@ async fn get_quotes(
         return Err(StatusCode::UNAUTHORIZED);
     }
 
-    Ok(Json(state.quotes.as_response()))
+    let since = params.since.unwrap_or(0);
+    Ok(Json(state.quotes.as_response(since)))
 }
