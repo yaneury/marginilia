@@ -1,0 +1,14 @@
+[target.xtensa-esp32-none-elf]
+runner = "espflash flash --monitor --chip esp32"
+linker = "/Users/yaneury/.rustup/toolchains/esp/xtensa-esp-elf/esp-15.2.0_20250920/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc"
+rustflags = [
+  "-C", "link-arg=-nostartfiles",
+]
+
+[env]
+
+[build]
+target = "xtensa-esp32-none-elf"
+
+[unstable]
+build-std = ["core"]

@@ -1,0 +1,46 @@
+[package]
+edition      = "2024"
+name         = "marginilia"
+rust-version = "1.88"
+version      = "0.1.0"
+default-run  = "marginilia"
+
+[[bin]]
+name = "marginilia"
+path = "./src/bin/main.rs"
+
+[[bin]]
+name = "clear"
+path = "./src/bin/clear.rs"
+
+[dependencies]
+critical-section = "1.2.0"
+embedded-hal = "1.0"
+embedded-hal-bus = "0.3.0"
+embedded-graphics = "0.8"
+embedded-text = "0.7"
+embedded-storage = "0.3"
+epd-waveshare = { version = "0.6.0", features = ["graphics"] }
+heapless = "0.8"
+
+[target.'cfg(target_arch = "xtensa")'.dependencies]
+esp-hal = { version = "~1.1.0", features = ["esp32", "unstable"] }
+esp-println = { version = "0.17.0", features = ["esp32"] }
+esp-bootloader-esp-idf = { version = "0.5.0", features = ["esp32"] }
+esp-storage = { version = "0.3", features = ["esp32", "nor-flash"] }
+
+
+# For fine tuning these settings, please refer to https://doc.rust-lang.org/cargo/reference/profiles.html
+[profile.dev]
+# The default debug profile is too slow and too big for resource-constrained devices.
+# Always build with some optimizations enabled.
+opt-level = "s"
+
+[profile.dev.package.esp-storage]
+opt-level = 2
+
+[profile.release]
+codegen-units = 1     # LLVM can perform better optimizations using a single thread
+debug         = 2     # prefer slower builds but better debugging experience
+lto           = 'fat'
+opt-level     = 's'
