@@ -198,6 +198,50 @@ actor QuoteService {
         let quote = try JSONDecoder().decode(Quote.self, from: data)
         return quote
     }
+    
+    /// Fetch quotes that are equal to or newer than the specified date
+    /// This will be called from BLE when ESP32 requests new quotes
+    func fetchQuotesSince(date: Date) async throws -> [Quote] {
+        // Format date as ISO 8601 string for the API
+        let formatter = ISO8601DateFormatter()
+        let dateString = formatter.string(from: date)
+        
+        guard var urlComponents = URLComponents(string: "\(baseURL)/quotes") else {
+            throw URLError(.badURL)
+        }
+        
+        // Add date query parameter
+        urlComponents.queryItems = [
+            URLQueryItem(name: "since", value: dateString)
+        ]
+        
+        guard let url = urlComponents.url else {
+            throw URLError(.badURL)
+        }
+        
+        var request = URLRequest(url: url)
+        request.setValue(apiKey, forHTTPHeaderField: "x-api-key")
+        request.timeoutInterval = 10
+        
+        let (data, response) = try await URLSession.shared.data(for: request)
+        
+        guard let httpResponse = response as? HTTPURLResponse else {
+            throw URLError(.badServerResponse)
+        }
+        
+        guard httpResponse.statusCode == 200 else {
+            throw URLError(.init(rawValue: httpResponse.statusCode))
+        }
+        
+        let quotes = try JSONDecoder().decode([Quote].self, from: data)
+        return quotes
+    }
+    
+    /// Convenience method to fetch quotes since a timestamp (for ESP32 compatibility)
+    func fetchQuotesSince(timestamp: Int64) async throws -> [Quote] {
+        let date = Date(timeIntervalSince1970: TimeInterval(timestamp))
+        return try await fetchQuotesSince(date: date)
+    }
 }
 
 // MARK: - Preview
