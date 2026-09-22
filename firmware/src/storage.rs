@@ -159,6 +159,12 @@ impl<F: NorFlash> QuoteStore<F> {
         Ok(())
     }
 
+    pub fn is_initialized(&mut self) -> bool {
+        self.read_header()
+            .map(|h| h.version == CURRENT_VERSION)
+            .unwrap_or(false)
+    }
+
     /// Return the number of stored quotes (O(1), reads from header).
     pub fn count(&mut self) -> Result<u32, StorageError> {
         let header = self.read_header()?;

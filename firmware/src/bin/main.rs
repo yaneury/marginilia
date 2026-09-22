@@ -7,7 +7,6 @@
 )]
 #![deny(clippy::large_stack_frames)]
 
-use embedded_hal::delay::DelayNs;
 use embedded_hal_bus::spi::ExclusiveDevice;
 use esp_hal::{
     clock::CpuClock,
@@ -22,7 +21,8 @@ use esp_hal::{
     time::Rate,
 };
 use esp_println::println;
-use marginilia::{display::Display, sample::QUOTES};
+use esp_storage::FlashStorage;
+use marginilia::{display::Display, sample::QUOTES, storage::QuoteStore};
 
 #[panic_handler]
 fn panic(_: &core::panic::PanicInfo) -> ! {
@@ -65,13 +65,90 @@ fn main() -> ! {
     let mut delay = Delay::new();
     let rng = Rng::new();
 
+    let flash = FlashStorage::new();
+    let mut store = QuoteStore::new(flash);
+
+    if !store.is_initialized() {
+        println!("Marginilia: formatting flash store...");
+        store.format().expect("format failed");
+    }
+
+    let stored_count = store.count().unwrap_or(0);
+    println!("Marginilia: {} quotes in flash", stored_count);
+
+    if stored_count > 0 {
+        run_flash_carousel(&mut display, &mut delay, &mut store, &rng, stored_count);
+    } else {
+        println!("Marginilia: flash empty, using sample quotes");
+        run_sample_carousel(&mut display, &mut delay, &rng);
+    }
+}
+
+fn run_flash_carousel(
+    display: &mut Display<
+        impl embedded_hal::spi::SpiDevice,
+        impl embedded_hal::digital::InputPin,
+        impl embedded_hal::digital::OutputPin,
+        impl embedded_hal::digital::OutputPin,
+        impl embedded_hal::delay::DelayNs,
+    >,
+    delay: &mut impl embedded_hal::delay::DelayNs,
+    store: &mut QuoteStore<FlashStorage>,
+    rng: &Rng,
+    count: u32,
+) -> ! {
+    const MAX_QUOTES: usize = 510;
+    const BUF_LEN: usize = 4096;
+
+    let n = (count as usize).min(MAX_QUOTES);
+    let mut deck = [0u16; MAX_QUOTES];
+    for (i, slot) in deck[..n].iter_mut().enumerate() {
+        *slot = i as u16;
+    }
+    let mut pos = n;
+    let mut buf = [0u8; BUF_LEN];
+
+    loop {
+        if pos >= n {
+            for i in (1..n).rev() {
+                let j = (rng.random() as usize) % (i + 1);
+                deck.swap(i, j);
+            }
+            pos = 0;
+        }
+
+        let idx = deck[pos] as u32;
+        pos += 1;
+        println!("Marginilia: flash quote {}/{}", pos, n);
+
+        match store.fetch(idx, &mut buf) {
+            Ok(quote) => display.show_quote(&quote).unwrap_or_else(|_| {
+                println!("Marginilia: display error");
+            }),
+            Err(_) => println!("Marginilia: fetch error for index {}", idx),
+        }
+
+        delay.delay_ms(3 * 60 * 1_000u32);
+    }
+}
+
+fn run_sample_carousel(
+    display: &mut Display<
+        impl embedded_hal::spi::SpiDevice,
+        impl embedded_hal::digital::InputPin,
+        impl embedded_hal::digital::OutputPin,
+        impl embedded_hal::digital::OutputPin,
+        impl embedded_hal::delay::DelayNs,
+    >,
+    delay: &mut impl embedded_hal::delay::DelayNs,
+    rng: &Rng,
+) -> ! {
     const N: usize = QUOTES.len();
     let mut deck: [u8; N] = core::array::from_fn(|i| i as u8);
-    let mut pos = N; // start at end so first iteration triggers a shuffle
+    let mut pos = N;
 
     loop {
         if pos >= N {
-            // Fisher-Yates shuffle
             for i in (1..N).rev() {
                 let j = (rng.random() as usize) % (i + 1);
                 deck.swap(i, j);
@@ -80,7 +157,7 @@ fn main() -> ! {
         }
         let idx = deck[pos] as usize;
         pos += 1;
-        println!("Marginilia: quote {}/{}", pos, N);
+        println!("Marginilia: sample quote {}/{}", pos, N);
         display.show_quote(&QUOTES[idx]).unwrap();
         delay.delay_ms(3 * 60 * 1_000u32);
     }
