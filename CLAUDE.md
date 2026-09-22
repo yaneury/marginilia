@@ -122,7 +122,11 @@ The Waveshare 7.5" V2 (UC8179) inverts colors at the hardware level. `Color::Whi
 
 ### Quote source
 
-`src/sample.rs` contains a compile-time `QUOTES` slice. BLE-based sync from the iOS app is not yet wired; swapping to `QuoteStore`-backed quotes is the next step.
+On startup the firmware reads from `QuoteStore` (SPI NOR flash). If the flash is empty (no BLE sync has happened yet), it falls back to the compile-time `QUOTES` slice in `src/sample.rs` so the device is always usable out of the box.
+
+### BLE receive (not yet implemented)
+
+The firmware needs to accept quote payloads written by the iOS app over BLE. This requires `esp-wifi` with the `ble` feature. As of now no stable `esp-wifi` release is compatible with `esp-hal ~1.1.0` — the `__esp_wifi_builtin_scheduler` feature that `esp-wifi ≥0.14` needs does not exist in any published `esp-hal` version. Once a compatible `esp-wifi` is available, the BLE GATT peripheral layer and the JSON payload parser can be added here.
 
 ### Flash storage (`src/storage.rs`)
 
